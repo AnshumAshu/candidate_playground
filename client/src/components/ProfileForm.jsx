@@ -33,41 +33,40 @@ export default function ProfileForm({ profile, onClose, onSaved }) {
 
 		// 🔴 PAYLOAD GOES HERE
 		const payload = {
-  name: form.name,
-  email: form.email,
-  education: form.education,
+			name: form.name,
+			email: form.email,
+			education: form.education,
 
-  skills: form.skills
-    .split(",")
-    .map(s => s.trim())
-    .filter(Boolean),
+			skills: form.skills
+				.split(",")
+				.map((s) => s.trim())
+				.filter(Boolean),
 
-  links: {
-    github: form.github,
-    linkedin: form.linkedin,
-    portfolio: form.portfolio
-  },
+			links: {
+				github: form.github,
+				linkedin: form.linkedin,
+				portfolio: form.portfolio,
+			},
 
-  projects: [
-    {
-      title: form.project1Title,
-      description: form.project1Desc,
-      links: form.project1Links
-        .split(",")
-        .map(l => l.trim())
-        .filter(Boolean)
-    },
-    {
-      title: form.project2Title,
-      description: form.project2Desc,
-      links: form.project2Links
-        .split(",")
-        .map(l => l.trim())
-        .filter(Boolean)
-    }
-  ].filter(project => project.title || project.description)
-};
-
+			projects: [
+				{
+					title: form.project1Title,
+					description: form.project1Desc,
+					links: form.project1Links
+						.split(",")
+						.map((l) => l.trim())
+						.filter(Boolean),
+				},
+				{
+					title: form.project2Title,
+					description: form.project2Desc,
+					links: form.project2Links
+						.split(",")
+						.map((l) => l.trim())
+						.filter(Boolean),
+				},
+			].filter((project) => project.title || project.description),
+		};
 
 		const url = profile
 			? `https://candidate-playground-nmpn.onrender.com/profile/${profile._id}`
