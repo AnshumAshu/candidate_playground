@@ -12,7 +12,7 @@ This project focuses on **real-world full-stack development**, covering CRUD ope
   https://github.com/AnshumAshu/candidate_playground  
 
 - **Live Demo:**  
-  _(To be added after deployment)_
+  https://candidate-playground-six.vercel.app/
 
 ---
 
