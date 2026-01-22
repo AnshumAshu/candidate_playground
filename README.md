@@ -157,57 +157,51 @@ curl -X POST http://localhost:5000/api/profile \
   "education": "B.Tech",
   "skills": ["Node", "React"]
 }'
-📮 Postman Usage
-Base URL:
+
+---
+
+## 📮 Postman Usage
+
+Base URL:  
 http://localhost:5000/api
 
-Create requests for:
+Use Postman to test:
+- GET /profile
+- POST /profile
+- PUT /profile/:id
+- DELETE /profile/:id
+- GET /profile/search
 
-GET /profile
+---
 
-POST /profile
+## ⚠ Known Limitations
 
-PUT /profile/:id
+- No authentication or authorization
+- Single-user playground design
+- No pagination for large datasets
+- Basic input validation
+- No rate limiting
 
-DELETE /profile/:id
+---
 
-GET /profile/search
+## 🚀 Future Improvements
 
-⚠ Known Limitations
-No authentication or authorization
+- JWT authentication & role-based access
+- Pagination & database indexing
+- Advanced search filters
+- Debounced search
+- CI/CD pipelines
+- Logging & monitoring
 
-Single-user playground design
+---
 
-No pagination for large datasets
+## 📙 What You’ll Learn
 
-Basic input validation only
+- Building real-world MERN stack applications
+- Designing clean REST APIs
+- React + Vite project structuring
+- MongoDB schema design
+- Frontend–backend integration
+- Environment-based configuration
+- Deployment-ready architecture
 
-No rate limiting
-
-🚀 Future Improvements
-JWT authentication & role-based access
-
-Pagination & database indexing
-
-Advanced search filters
-
-Debounced search on frontend
-
-CI/CD pipelines
-
-Logging & monitoring
-
-📙 What You’ll Learn
-Building real-world MERN stack applications
-
-Designing clean REST APIs
-
-React + Vite project structuring
-
-MongoDB schema design
-
-Frontend–backend integration
-
-Environment-based configuration
-
-Deployment-ready architecture
