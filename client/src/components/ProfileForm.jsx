@@ -70,8 +70,8 @@ export default function ProfileForm({ profile, onClose, onSaved }) {
 
 
 		const url = profile
-			? `http://localhost:4000/profile/${profile._id}`
-			: "http://localhost:4000/profile";
+			? `https://candidate-playground-nmpn.onrender.com/profile/${profile._id}`
+			: "https://candidate-playground-nmpn.onrender.com/profile";
 
 		const method = profile ? "PUT" : "POST";
 

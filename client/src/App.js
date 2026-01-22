@@ -18,7 +18,7 @@ function App() {
 
 	const fetchProfiles = async (query = "") => {
 		try {
-			const res = await fetch(`http://localhost:4000/profile${query}`);
+			const res = await fetch(`https://candidate-playground-nmpn.onrender.com/profile${query}`);
 			const data = await res.json();
 			setProfiles(data.data || data);
 		} catch (err) {
@@ -36,7 +36,7 @@ function App() {
 		if (!confirmDelete) return;
 
 		try {
-			await fetch(`http://localhost:4000/profile/${id}`, {
+			await fetch(`https://candidate-playground-nmpn.onrender.com/profile/${id}`, {
 				method: "DELETE",
 			});
 
@@ -56,7 +56,7 @@ function App() {
   try {
     setLoading(true);
     const res = await fetch(
-      `http://localhost:4000/profile/search?q=${skill}`
+      `https://candidate-playground-nmpn.onrender.com/profile/search?q=${skill}`
     );
     const data = await res.json();
     setProfiles(data);
